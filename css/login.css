@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a0000; /* Fondo rojo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: rgba(51, 0, 0, 0.9); /* Rojo oscuro translúcido */
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Logo centrado */
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+}
+
+/* Título */
+h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #660000;
+    border-radius: 8px;
+    background: #1a0000;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #ff0000;
+}
+
+/* Botón mostrar/ocultar contraseña */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4444;
+    font-size: 18px;
+}
+
+/* Checkbox términos */
+.terms-conditions {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+}
+
+.terms-conditions a {
+    color: #ff4444;
+    text-decoration: none;
+}
+
+.terms-conditions a:hover {
+    text-decoration: underline;
+}
+
+/* Botón principal */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #ff0000;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background: #cc0000;
+}
+
+/* Links */
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    display: block;
+    color: #ff4444;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Botón regresar */
+.back-button {
+    margin-top: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #330000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-back:hover {
+    background: #660000;
+}

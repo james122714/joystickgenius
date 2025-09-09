@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #1a0000, #000);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #330000, #000);
+    padding: 10px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo con texto + imagen */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight:lighter;
+    color: #ff0000;
+    gap: 10px;
+    /* espacio entre texto y logo */
+}
+
+.logo img {
+    width: 60px;
+    /* ancho rectangular */
+    height: 40px;
+    /* altura menor que el ancho */
+    object-fit: contain;
+    /* mantiene la proporción sin deformar */
+    border-radius: 6px;
+    /* esquinas un poco redondeadas */
+    border: 2px solid #ff0000;
+    /* borde rojo gamer */
+    background: #000;
+    /* fondo negro por si el logo tiene transparencias */
+    padding: 2px;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff4444;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+/* Hero (sección de bienvenida) */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff2222;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+}
